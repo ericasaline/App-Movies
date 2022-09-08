@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">App</string>
+    <string name="text_movies_app">Movies App</string>
+    <string name="text_now_playing">Now Playing</string>
+    <string name="text_up_coming">Up Coming</string>
+    <string name="text_error">Something is wrong!</string>
+    <string name="text_synopsis">Synopsis</string>
+    <string name="text_cast_crew"><![CDATA[Cast & Crew]]></string>
+    <string name="text_photos">Photos</string>
+    <string name="text_btn_ok">OK</string>
+</resources>
