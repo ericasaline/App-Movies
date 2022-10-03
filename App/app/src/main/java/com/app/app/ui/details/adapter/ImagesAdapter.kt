@@ -27,8 +27,7 @@ class ImagesAdapter(private val images: List<ImageModel>)
     }
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ViewHolder {
-        val binding = ItemPhotosBinding
-            .inflate(LayoutInflater.from(parent.context), parent, false)
+        val binding = ItemPhotosBinding.inflate(LayoutInflater.from(parent.context), parent, false)
         return ViewHolder(binding)
     }
 

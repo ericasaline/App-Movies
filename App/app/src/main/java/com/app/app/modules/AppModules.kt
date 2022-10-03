@@ -19,19 +19,13 @@ val retrofitModule = module {
 }
 
 val serviceModule = module {
-    single {
-        get<Retrofit>().create(Service::class.java)
-    }
+    single { get<Retrofit>().create(Service::class.java) }
 }
 
 val repositoryModule = module {
-    single<MovieRepository> {
-        RepositoryImpl(get())
-    }
+    single<MovieRepository> { RepositoryImpl(get()) }
 }
 
 val viewModelModule = module {
-    viewModel {
-        ViewModel(get())
-    }
+    viewModel { ViewModel(get()) }
 }

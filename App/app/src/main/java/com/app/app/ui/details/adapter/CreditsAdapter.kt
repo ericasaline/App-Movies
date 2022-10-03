@@ -31,8 +31,7 @@ class CreditsAdapter(private val castcrew: List<CreditsModel>)
     }
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ViewHolder {
-        val binding = ItemCreditsBinding
-            .inflate(LayoutInflater.from(parent.context), parent, false)
+        val binding = ItemCreditsBinding.inflate(LayoutInflater.from(parent.context), parent, false)
         return ViewHolder(binding)
     }
 

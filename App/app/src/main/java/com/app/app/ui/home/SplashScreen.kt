@@ -9,14 +9,13 @@ import androidx.appcompat.app.AppCompatActivity
 import com.app.app.databinding.ActivitySplashScreenBinding
 
 @SuppressLint("CustomSplashScreen")
-class SplashScreen : AppCompatActivity() {
+class SplashScreen: AppCompatActivity() {
 
-    private val binding by lazy {
-        ActivitySplashScreenBinding.inflate(layoutInflater)
-    }
+    private lateinit var binding: ActivitySplashScreenBinding
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
+        binding = ActivitySplashScreenBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
         actionSplashScreen()

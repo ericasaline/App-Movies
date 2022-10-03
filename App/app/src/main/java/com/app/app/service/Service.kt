@@ -11,7 +11,7 @@ import retrofit2.http.Path
 
 const val api_key = "api_key=487ebc835337ecb79e8f5cf820682541"
 
-interface Service  {
+interface Service {
     @GET("movie/now_playing?$api_key")
     suspend fun nowPlaying(): Response<MovieResponse>
 

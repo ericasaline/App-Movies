@@ -16,10 +16,10 @@ import com.app.app.ui.viewmodel.ViewModel
 import com.squareup.picasso.Picasso
 import org.koin.androidx.viewmodel.ext.android.viewModel
 
-class DetailsActivity : AppCompatActivity() {
+class DetailsActivity: AppCompatActivity() {
 
     private lateinit var binding: ActivityDetailsBinding
-    private val viewModel : ViewModel by viewModel()
+    private val viewModel: ViewModel by viewModel()
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
